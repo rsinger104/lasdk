@@ -1,0 +1,75 @@
+{
+  "popup": {
+    "pageTitle": "Live Assist",
+    "title": "Fusion Live Assist",
+    "acceptWebcam": "上の［許可］をクリックし、Live Assist がご利用中のウェブカムへアクセスすることを許可してください。",
+    "status": {
+      "waiting": "待機中…",
+      "connecting": "接続中…",
+      "connected": "接続しました"
+    }
+  },
+  "button": {
+    "ok": "OK",
+    "mute": "ミュート",
+    "unmute": "ミュート解除",
+    "end": "終了"
+  },
+  "notice": {
+    "noAgents": "現在、対応可能なエージェントがいません。再度お試しください。",
+    "navigateAwayAssist": "Live Assist を使用していないページへ移動しました。このウィンドウが開いている間は、ビデオと音声が Live Assist エージェントへ送信され続けます。",
+    "callFailed": "通話できませんでした。",
+    "userMediaError": "マイク／カメラへアクセスできませんでした。ブラウザの設定をチェックし、アクセスを許可してください。",
+    "promptToAllowScreenShare": "現在開いているブラウザのウィンドウを共有してもよろしいですか？",
+    "promptToAllowPushedDocument": "エージェントが文書の送信許可を求めています。文書を表示してもよろしいですか？"
+  },
+  "error": {
+    "noWebRTC": "申し訳ありません。ご利用中のブラウザは WebRTC をサポートしていません。",
+    "popupBlocked": "ご利用中のブラウザが、Live Assist 実行中に必要となるポップアップウィンドウをブロックしました。当サイトからのポップアップを許可し、ページをリロードしてください。",
+    "shareFail": {
+      "targetType": {
+        "image": "画像",
+        "document": "文書"
+      },
+      "error": "エラー： __error__",
+      "message": "エージェントが共有しようとした __targetType__ をロードできませんでした。"
+    }
+  },
+  "agent": {
+    "navigateAwayAssist": "画面共有は一時停止中です。",
+    "incoming": "__caller__ からの着信です。応答しますか？",
+    "forms": {
+      "keepExisting_title": "コンシューマーの数値を維持",
+      "keepExisting_symbol": "＜",
+      "submit": "フォームに入力",
+      "fieldName": "フィールド名",
+      "agentChanges": "エージェント側で変更",
+      "consumerChanges": "コンシューマー側で変更"
+    },
+    "alerts": {
+      "docPushToUnsupportedPage": "コンシューマーが許可していない Assist のページに文書を転送することはできません。"
+    }
+  },
+  "shared": {
+    "formattedPercent": "__number__％"
+  },
+  "cobrowsing": {
+    "active": "現在、このページは共有されています。"
+  },
+  "plugin": {
+    "downloadPlugin": "プラグインをダウンロード",
+    "rejectRequired": "キャンセル",
+    "rejectUpgradeOptional": "今はしない",
+    "continueUpgradeOptional": "続ける",
+    "ie": {
+      "installRequired": "Internet Explorer で Live Assist を使用するにはプラグインが必要です。プラグインをダウンロードならびにインストールし、先へ進んでください。",
+      "upgradeRequired": "Live Assist を使用するにはプラグインをアップグレードしてください。現在のバージョンは __installedVersion__ ですが、バージョン __latestAvailableVersion__ が必要です。プラグインをアップグレード後、ブラウザを再起動し、先へ進んでください。",
+      "upgradeOptional": "Live Assist 用プラグインのアップグレードがご利用可能です。現在のバージョンは __installedVersion__ ですが、バージョン __latestAvailableVersion__ をご利用いただけます。"
+    },
+    "safari": {
+      "installRequired": "Safari で Live Assist を使用するにはプラグインが必要です。プラグインをダウンロードならびにインストールし、インストール完了後にブラウザを再起動してください。",
+      "upgradeRequired": "Live Assist を使用するにはプラグインをアップグレードしてください。現在のバージョンは __installedVersion__ ですが、バージョン __latestAvailableVersion__ が必要です。プラグインをアップグレード後、ブラウザを再起動し、先へ進んでください。",
+      "upgradeOptional": "Live Assist 用プラグインのアップグレードがご利用可能です。現在のバージョンは __installedVersion__ ですが、バージョン __latestAvailableVersion__ をご利用いただけます。"
+    }
+  }
+}

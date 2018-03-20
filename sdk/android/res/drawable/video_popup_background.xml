@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <gradient
+            android:angle="270"
+            android:startColor="@color/video_buttons_area_background_top"
+            android:endColor="@color/video_buttons_area_background_bottom"
+            android:type="linear" />
+        
+        <corners 
+            android:bottomLeftRadius="8dip"
+            android:bottomRightRadius="8dip"
+            android:topLeftRadius="8dip"
+            android:topRightRadius="8dip"/>
+            
+            <stroke
+                android:width="2dip"
+                android:color="#cccccc" />
+
+    </shape>
+</item>
+</selector>

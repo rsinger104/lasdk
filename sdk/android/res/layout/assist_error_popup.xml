@@ -1,0 +1,25 @@
+<com.alicecallsbob.assist.sdk.overlay.view.impl.AssistRelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/error_popup_background">
+    <TextView
+        android:id="@+id/assist_error_text"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="30dp"
+        android:maxLines="3"/>
+
+    <TextView 
+        android:id="@+id/assist_doc_close"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="@string/close_popup_text"
+        android:textColor="#FFFFFF"
+        android:layout_alignTop="@id/assist_error_text"
+        android:layout_alignRight="@id/assist_error_text"/>
+</com.alicecallsbob.assist.sdk.overlay.view.impl.AssistRelativeLayout>
+
+

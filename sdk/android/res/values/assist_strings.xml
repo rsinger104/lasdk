@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="assist_app">Assist Sample</string>
+    <string name="close_popup_text">CLOSE</string>
+    <string name="image_error_message">Error when loading shared image.</string>
+    <string name="document_error_message">Error when loading shared document.</string>
+    
+    <string name="input_element_id_tag">This text is never actually used</string>
+    
+    <string name="mute_button_text">Mute</string>
+    <string name="unmute_button_text">Unmute</string>
+    <string name="end_button_text">End</string>
+    <string name="request_screen_share_message">Enable screen sharing?</string>
+    <string name="allow_screen_share_button_text">Enable</string>
+    <string name="reject_screen_share_button_text">Cancel</string>
+    <string name="authorize_shared_document_message">Accept shared document?</string>
+    <string name="allow_shared_document_button_text">Allow</string>
+    <string name="reject_shared_document_button_text">Deny</string>
+    <string name="cobrowse_started_text">Application sharing active</string>
+    <string name="cobrowse_ended_text">Application sharing inactive</string>
+    <string name="cobrowse_notifcation_title">Application Sharing</string>
+    <string name="cobrowse_notifcation_text">Active</string>
+    <string name="default_web_address">http://www.cafex.com</string>
+    <string name="missing_call_capability_error_message">CSDK library not found, cannot create call. Please check the classpath and/or refer to the documentation for more information</string>
+</resources>

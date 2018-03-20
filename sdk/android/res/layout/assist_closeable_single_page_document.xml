@@ -1,0 +1,63 @@
+<com.alicecallsbob.assist.sdk.overlay.view.impl.AssistRelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:background="@color/document_popup_background">
+    <LinearLayout
+        android:id="@+id/assist_doc_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#000000"
+    >
+        <Button 
+            android:id="@+id/assist_doc_prev_button"
+            android:text="Prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+        <TextView
+            android:id="@+id/assist_doc_page_number"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button 
+            android:id="@+id/assist_doc_next_button"
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/assist_popup_content"
+        android:layout_below="@id/assist_doc_navigation"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/assist_loading_layout"
+        android:layout_below="@id/assist_doc_navigation"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/assist_popup_content"
+        android:gravity="center">
+        <ProgressBar
+            android:id="@+id/assist_doc_loading_progress"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminate="true"
+        />
+    </LinearLayout>
+
+    <Button 
+        android:id="@+id/assist_doc_close"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="@string/close_popup_text"
+        android:textColor="#FFFFFF"
+        android:layout_alignTop="@id/assist_popup_content"
+        android:layout_alignRight="@id/assist_popup_content"/>
+</com.alicecallsbob.assist.sdk.overlay.view.impl.AssistRelativeLayout>
+
+

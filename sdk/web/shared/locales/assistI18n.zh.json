@@ -1,0 +1,75 @@
+{
+  "popup": {
+    "pageTitle": "Live Assist",
+    "title": "Fusion Live Assist",
+    "acceptWebcam": "请在上方点击“允许”以允许 Live Assist 访问您的摄像头。",
+    "status": {
+      "waiting": "正在等待...",
+      "connecting": "正在连接...",
+      "connected": "已连接"
+    }
+  },
+  "button": {
+    "ok": "确定",
+    "mute": "静音",
+    "unmute": "取消静音",
+    "end": "结束"
+  },
+  "notice": {
+    "noAgents": "目前无可用的代理。请再试一次。",
+    "navigateAwayAssist": "您已浏览至没有 Live Assist 的页面。本窗口打开期间，您的视频和声音仍会被传输至 Live Assist 代理。",
+    "callFailed": "建立呼叫失败。",
+    "userMediaError": "访问麦克风/摄像头失败。您可能需要检查您的浏览器设置是否允许访问。",
+    "promptToAllowScreenShare": "是否要启用当前浏览器窗口共享？",
+    "promptToAllowPushedDocument": "代理想要向您发送一个文档。是否要进行查看？"
+  },
+  "error": {
+    "noWebRTC": "抱歉，您的浏览器似乎并不支持 WebRTC。",
+    "popupBlocked": "您的浏览器阻止了 Live Assist 运行所需的弹出窗口。请允许来自此站点的弹出窗口，并重新加载此页面。",
+    "shareFail": {
+      "targetType": {
+        "image": "图像",
+        "document": "文档"
+      },
+      "error": "错误：__error__",
+      "message": "代理试图与您共享的__targetType__加载失败。"
+    }
+  },
+  "agent": {
+    "navigateAwayAssist": "同步浏览已暂停。",
+    "incoming": "__caller__有来电，要接听吗？",
+    "forms": {
+      "keepExisting_title": "保留客户的值。",
+      "keepExisting_symbol": "<",
+      "submit": "填充表单",
+      "fieldName": "字段名称",
+      "agentChanges": "代理更改",
+      "consumerChanges": "客户更改"
+    },
+    "alerts": {
+      "docPushToUnsupportedPage": "如果客户不在已启用 Assist 的页面，您无法推送文档。"
+    }
+  },
+  "shared": {
+    "formattedPercent": "__number__%"
+  },
+  "cobrowsing": {
+    "active": "此页面当前正在共享。"
+  },
+  "plugin": {
+    "downloadPlugin": "下载插件",
+    "rejectRequired": "取消",
+    "rejectUpgradeOptional": "稍后",
+    "continueUpgradeOptional": "继续",
+    "ie": {
+      "installRequired": "Internet Explorer 使用 Live Assist 需要插件。请下载并安装插件以继续。",
+      "upgradeRequired": "插件需要升级以使用 Live Assist。您当前的版本是 __installedVersion__ 版，但要求使用 __latestAvailableVersion__ 版。请升级插件并重启您的浏览器以继续。",
+      "upgradeOptional": "Live Assist 有可用的插件升级。您当前的版本是 __installedVersion__ 版，但有 __latestAvailableVersion__ 版可用。"
+    },
+    "safari": {
+      "installRequired": "Safari 使用 Live Assist 需要插件。请下载并安装插件，安装完成后请重启您的浏览器。",
+      "upgradeRequired": "插件需要升级以使用 Live Assist。您当前的版本是 __installedVersion__ 版，但要求使用 __latestAvailableVersion__ 版。请升级插件并重启您的浏览器以继续。",
+      "upgradeOptional": "Live Assist 有可用的插件升级。您当前的版本是 __installedVersion__ 版，但有 __latestAvailableVersion__ 版可用。"
+    }
+  }
+}

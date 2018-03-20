@@ -1,0 +1,86 @@
+form input, textarea, select {
+    margin-top: 0.5em;
+    float : left;
+    clear: right;
+}
+
+label {
+    margin-right: 1em;
+    clear : left;
+    float:  left;
+}
+
+form {
+    line-height: 2em;
+}
+
+td {
+    width: 25%;
+}
+
+form table {
+    margin: auto;
+}
+
+input[type="submit"] {
+    clear: left;
+}
+
+.assist_modified {
+    /*border: 1px solid red;*/
+    /*box-shadow: 0px 0px 10px #993333;*/
+}
+
+/*#form-area {*/
+    /*position: absolute;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*z-index: 9999;*/
+    /*display: none;*/
+/*}*/
+
+.background {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #333333;
+    opacity: 0.8;
+}
+
+#form-container {
+    background-color: white;
+    border: 2px solid #888;
+    padding: 1em;
+    display: none;
+    overflow: auto;
+    border-radius: 4px;
+}
+
+#close-form {
+    background-color: white;
+}
+
+#form-button {
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#form-button[disabled] {
+    display: none;
+}
+
+#form-container.minimised {
+    overflow:hidden;
+}
+
+#form-container.minimised form {
+    display:none;
+}
+
+#form-container.minimised .maximiseButton {
+    opacity: 1;
+    font-family: sans-serif;
+    font-size: large;
+}

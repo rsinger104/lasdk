@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="Assist Sample App Configuration">
+        <EditTextPreference
+                android:key="demo-website"
+                android:title="Sample App Website"
+                android:summary="Tap to enter the website to use for the demo"
+                android:dialogTitle="Website to use for the demo"
+                android:defaultValue="@string/default_web_address" />
+
+        <EditTextPreference
+                android:key="assist-host"
+                android:title="Assist server host"
+                android:summary="Tap to enter the Assist server host"
+                android:dialogTitle="Assist server hostname/ip"
+                android:defaultValue="" />
+        
+        <EditTextPreference
+                android:key="assist-port"
+                android:title="Assist server port"
+                android:summary="Tap to enter the Assist server port"
+                android:dialogTitle="Assist server port e.g. 8080"
+                android:defaultValue="8080" />
+        
+        <ListPreference
+                android:key="assist-secure"
+                android:title="Use secure connection to Assist"
+                android:summary="If the Assist server should be connected to securely"
+                android:dialogTitle="Use secure connection"
+                android:defaultValue="false"
+                android:entryValues="@array/assist_secure_values" 
+        		android:entries="@array/assist_secure_keys"  />
+        
+        <EditTextPreference
+                android:key="assist-agent"
+                android:title="Assist agent id"
+                android:summary="Tap to enter the Assist agent id"
+                android:dialogTitle="Assist agent id e.g. agent1"
+                android:defaultValue="agent1" />   
+                
+        <EditTextPreference
+                android:key="assist-correlationId"
+                android:title="Correlation ID"
+                android:summary="Tap to enter the Correlation ID"
+                android:dialogTitle="Correlation ID id e.g. 1234"
+                android:defaultValue="" />
+        
+        <ListPreference
+            android:key="assist-media-modes"
+            android:title="Media Mode"
+            android:summary="The media mode to use when starting a call"
+            android:dialogTitle="Select Media Mode"
+            android:defaultValue="TWO_WAY_VOICE_AND_VIDEO"
+            android:entries="@array/media_modes"
+            android:entryValues="@array/media_modes_values" />
+
+        <ListPreference
+                android:key="assist-audio-output"
+                android:title="Audio Ouput"
+                android:summary="If the audio should be output through the speaker"
+                android:dialogTitle="Audio Output"
+                android:defaultValue="true"
+                android:entryValues="@array/assist_audio_output_keys" 
+        		android:entries="@array/assist_audio_output_values"  
+        />
+
+    </PreferenceCategory>
+</PreferenceScreen>

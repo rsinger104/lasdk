@@ -1,0 +1,75 @@
+{
+    "popup": {
+        "pageTitle":"Live Assist",
+        "title":"Fusion Live Assist",
+        "acceptWebcam":"Please allow LiveAssist to access your webcam by clicking 'Allow' above.",
+        "status": {
+            "waiting":"Waiting...",
+            "connecting":"Connecting...",
+            "connected":"Connected"
+        }
+    },
+    "button": {
+        "ok":"OK",
+        "mute":"Mute",
+        "unmute":"Unmute",
+        "end":"End"
+    },
+    "notice": {
+        "noAgents":"There are currently no agents available. Please try again.",
+        "navigateAwayAssist":"You have gone to a page without Live Assist. Your video and voice are still being transmitted to the Live Assist agent while this window is open.",
+        "callFailed":"Failed to establish call.",
+        "userMediaError":"Failed to get access to the microphone/camera. You may need to check your browser settings to allow access.",
+        "promptToAllowScreenShare":"Would you like to enable sharing of your current browser window?",
+        "promptToAllowPushedDocument":"The agent would like to send you a document.  Would you like to view it?"
+    },
+    "error": {
+        "noWebRTC":"Sorry, your browser does not appear to support WebRTC.",
+        "popupBlocked":"Your browser has blocked a pop-up window required for Live Assist to work. Please allow pop-ups from this site, and reload this page.",
+        "shareFail": {
+            "targetType": {
+                "image":"An image",
+                "document":"A document"
+            },
+            "error":"Error: __error__",
+            "message":"__targetType__ that the agent has attempted to share with you has failed to load."
+        }
+    },
+    "agent": {
+        "navigateAwayAssist":"The co-browse is paused.",
+        "incoming":"Incoming call from __caller__, answer?",
+        "forms": {
+            "keepExisting_title":"Keep the consumer's value.",
+            "keepExisting_symbol":"<",
+            "submit":"Populate form",
+            "fieldName":"Field name",
+            "agentChanges":"Agent changes",
+            "consumerChanges":"Consumer changes"
+        },
+        "alerts": {
+            "docPushToUnsupportedPage" : "You cannot push documents if the consumer is not on an Assist enabled page."
+        }
+    },
+    "shared": {
+        "formattedPercent" : "__number__%"
+    },
+    "cobrowsing": {
+    	"active":"This page is currently being shared."
+    },
+    "plugin": {
+        "downloadPlugin": "Download Plugin",
+        "rejectRequired": "Cancel",
+        "rejectUpgradeOptional": "Not Now",
+        "continueUpgradeOptional": "Continue",
+        "ie": {
+            "installRequired": "A plugin is required to use Live Assist with Internet Explorer. Please download and install the plugin to proceed.",
+            "upgradeRequired": "A plugin upgrade is required to use Live Assist. Your current version is __installedVersion__, however version __latestAvailableVersion__ is required. Please upgrade the plugin and restart your browser to continue.",
+            "upgradeOptional": "A plugin upgrade is available for Live Assist. Your current version is __installedVersion__, however version __latestAvailableVersion__ is available."
+        },
+        "safari": {
+            "installRequired": "A plugin is required to use Live Assist with Safari. Please download and install the plugin and restart your browser once the install has completed.",
+            "upgradeRequired": "A plugin upgrade is required for Live Assist. Your current version is __installedVersion__, however version __latestAvailableVersion__ is required. Please upgrade the plugin and restart your browser to continue.",
+            "upgradeOptional": "A plugin upgrade is available for Live Assist. Your current version is __installedVersion__, however version __latestAvailableVersion__ is available."
+        }
+    }
+}

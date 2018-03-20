@@ -1,0 +1,75 @@
+{
+  "popup": {
+    "pageTitle": "Live Assist",
+    "title": "Fusion Live Assist",
+    "acceptWebcam": "請點選上方的 [允許]，讓 Live Assist 使用您的網路攝影機。",
+    "status": {
+      "waiting": "等待中⋯",
+      "connecting": "連線中⋯",
+      "connected": "已連線"
+    }
+  },
+  "button": {
+    "ok": "確定",
+    "mute": "靜音",
+    "unmute": "取消靜音",
+    "end": "結束"
+  },
+  "notice": {
+    "noAgents": "客服人員目前全都忙線中。請再試一次。",
+    "navigateAwayAssist": "您已前往沒有 Live Assist 的網頁。只要不關閉這個視窗，系統就會繼續將視訊和聲音傳送給 Live Assist 客服人員。",
+    "callFailed": "無法建立通話。",
+    "userMediaError": "無法存取麥克風/攝影機。您可能必須檢查瀏覽器設定才能允許存取。",
+    "promptToAllowScreenShare": "您要啟用目前瀏覽器視窗的分享功能嗎？",
+    "promptToAllowPushedDocument": "客服人員想傳送文件給您。您要查看嗎？"
+  },
+  "error": {
+    "noWebRTC": "很抱歉，您的瀏覽器不支援 WebRTC。",
+    "popupBlocked": "您的瀏覽器封鎖了快顯視窗，因此 Live Assist 無法執行。請允許這個網站產生的快顯視窗，然後重新載入這個網頁。",
+    "shareFail": {
+      "targetType": {
+        "image": "圖片",
+        "document": "文件"
+      },
+      "error": "錯誤：__error__",
+      "message": "系統無法載入客服人員想與您分享的「__targetType__」。"
+    }
+  },
+  "agent": {
+    "navigateAwayAssist": "共同瀏覽功能已經暫停。",
+    "incoming": "是否接聽__caller__的來電？",
+    "forms": {
+      "keepExisting_title": "保留消費者輸入的值。",
+      "keepExisting_symbol": "<",
+      "submit": "填寫表單",
+      "fieldName": "欄位名稱",
+      "agentChanges": "客服人員變更內容",
+      "consumerChanges": "消費者變更內容"
+    },
+    "alerts": {
+      "docPushToUnsupportedPage": "如果消費者不在啟用「協助」功能的網頁，您就無法傳送文件。"
+    }
+  },
+  "shared": {
+    "formattedPercent": "__number__%"
+  },
+  "cobrowsing": {
+    "active": "系統目前正在分享這個頁面。"
+  },
+  "plugin": {
+    "downloadPlugin": "下載外掛程式",
+    "rejectRequired": "取消",
+    "rejectUpgradeOptional": "以後再說",
+    "continueUpgradeOptional": "繼續",
+    "ie": {
+      "installRequired": "您必須安裝外掛程式才能在 Internet Explorer 中使用 Live Assist。請下載並安裝外掛程式以便繼續進行。",
+      "upgradeRequired": "您必須升級外掛程式才能使用 Live Assist。目前的版本是 __installedVersion__，但所需版本是 __latestAvailableVersion__。如要繼續進行，請升級外掛程式並重新啟動瀏覽器。",
+      "upgradeOptional": "Live Assist 已有外掛程式升級版。目前的版本是 __installedVersion__，但可用版本是 __latestAvailableVersion__。"
+    },
+    "safari": {
+      "installRequired": "您必須安裝外掛程式才能在 Safari 中使用 Live Assist。請下載和安裝外掛程式，並在安裝完成後重新啟動瀏覽器。",
+      "upgradeRequired": "您必須安裝 Live Assist 的外掛程式升級版。目前的版本是 __installedVersion__，但所需版本是 __latestAvailableVersion__。如要繼續進行，請升級外掛程式並重新啟動瀏覽器。",
+      "upgradeOptional": "Live Assist 已有外掛程式升級版。目前的版本是 __installedVersion__，但可用版本是 __latestAvailableVersion__。"
+    }
+  }
+}

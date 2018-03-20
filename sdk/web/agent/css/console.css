@@ -1,0 +1,575 @@
+#header {
+    position : relative;
+    height : 60px;
+    width : 100%;
+    padding: 1em;
+    background-image: url("../assets/logo.svg"), url("../assets/logo.png");
+    background-color: #3c6aa1;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#console {
+    position : absolute;
+    width : 100%;
+    height :calc(100% - 60px);
+    top : 60px;
+    left : 0;
+}
+
+#tools {
+    position: absolute;
+    top: -54px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 40px;
+    width: 350px;
+    padding: 3px;
+}
+
+#tools:not(.active) {
+    display: none;
+}
+
+.minimised #tools {
+    display: none;
+}
+
+.snapshot-buttons {
+    position: absolute;
+    top: -56px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 34px;
+    width: 120px;
+}
+
+.minimised .snapshot-buttons {
+    display: none;
+}
+
+li a {
+    cursor: pointer;
+}
+
+#shareview {
+    border: 2px solid #888;
+    border-radius: 4px;
+    overflow : hidden;
+    position : absolute;
+    background-color : #f9f9f9;
+    top : 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height:100%;
+}
+
+#call-quality-indicator {
+    height : 25px;
+    width : 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top : 10px;
+    left : 10px;
+    position : absolute;
+}
+
+#call-quality-indicator.call-quality-good {
+    display: none;
+    background-image: url("../../shared/assets/network-green.png");
+}
+
+#call-quality-indicator.call-quality-moderate {
+    background-image: url("../../shared/assets/network-yellow.png");
+}
+
+#call-quality-indicator.call-quality-poor {
+    background-image: url("../../shared/assets/network-red.png");
+}
+
+#call-quality-indicator.no-call {
+    display : none;
+}
+
+#screenShareRequest {
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10000000;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#screenShareRequest:not(:only-child) {
+    display: none;
+}
+
+#logout-dropdown {
+    float: right;
+}
+#heading {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: x-large;
+    bottom: 0;
+    height: 1em;
+    left: 120px;
+}
+
+.minimised {
+    position: absolute;
+    transition: left 250ms, top 250ms, width 250ms, height 250ms;
+    overflow: hidden;
+}
+
+.maximised {
+    position: absolute;
+    transition: left 250ms, top 250ms, width 250ms, height 250ms;
+}
+
+#videoview {
+    display: none;
+}
+
+.videoDiv {
+    height: 100%;
+    width: 100%;
+}
+
+.dropdown-menu {
+    z-index: 99999999;
+}
+
+#callButtons {
+    float: right;
+    margin-right:20px;
+    position: relative;
+}
+
+#muteButton {
+    display: none;
+}
+
+.in-call #muteButton {
+    display: inline-block;
+}
+
+#endButton {
+    display: none;
+}
+
+.in-call #endButton {
+    display: block;
+}
+
+#endCobrowseButton {
+    display : none;
+    background-color:#d43b24;
+    border-color: #d43b24;
+    color: #fff;
+}
+
+.in-cobrowse.in-call #shortCodeButton {
+    display: inline-block;
+}
+
+.in-cobrowse #shortCodeButton {
+    display: inline-block;
+}
+
+.in-call #shortCodeButton {
+    display: none;
+}
+
+.in-call.in-cobrowse #suspendCobrowseButton {
+    display: none;
+}
+
+.in-cobrowse #suspendCobrowseButton {
+    display: block;
+}
+
+.in-cobrowse:not(.in-call) #endCobrowseButton {
+   display: inline-block;
+}
+
+
+
+#suspendCobrowseButton {
+    display: none;
+}
+
+#shortCodeEntry {
+    display: block;
+    position: absolute;
+    top: 37px;
+    right: 3px;
+    width: 400px;
+    background-color: #3C6AA1;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+#shortCodeEntry:not(.visible) {
+    display: none;
+}
+
+#shortCodeValue {
+    float: left;
+    width: 80%;
+    height: 34px;
+}
+
+#submitShortCodeButton {
+    float: right;
+}
+
+button.co-browsing .co-browse-active {
+    display: inline-block;
+}
+
+button.co-browsing .co-browse-suspended {
+    display: none;
+}
+
+button:not(.co-browsing) .co-browse-active {
+    display: none;
+}
+
+button:not(.co-browsing) .co-browse-suspended {
+    display: inline-block;
+}
+
+#share-container {
+    display:none;
+}
+
+#share-container.minimised .maximiseButton {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    margin: 2px;
+}
+
+.maximised .maximiseButton {
+    display: none;
+}
+
+.minimised .maximiseButton {
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    top:0;
+    left:0;
+    cursor: pointer;
+}
+
+div.maximiseButton {
+    background-color: rgba(0,0,0,0);
+}
+
+#previewvideo {
+    transform:rotateY(180deg);
+}
+/* IE doesn't display preview view when not in call, so add a background colour to provide an indication the page has loaded properly. */
+#previewvideo object {
+    /** When the object is resized it will appear black to the user, so default it to thaqt colour to prevent inconsistencies */
+    background-color:black;
+}
+
+.snapshot {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.alert-wrapper {
+    position: absolute;
+    text-align: center;
+    z-index:10;
+}
+.alert
+{
+	display: inline-block;
+	margin-bottom: 0px;
+}
+
+.button-group
+{
+    display: inline-block;
+    float: right;
+}
+.button-group button
+{
+    margin-left: 10px;
+}
+
+.incoming-call-buttons #button-answer
+{
+    box-shadow: 0px 0px 10px 2px #277128;;
+}
+
+.incoming-call-buttons #button-reject
+{
+    box-shadow: 0px 0px 10px 2px #AD1010;
+}
+
+#agent-status
+{
+    display: inline-block;
+    color: white;
+    float: right;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+#accept-incoming {
+    font-size: 1.5em;
+}
+
+#accept-incoming .close {
+    display:none;
+}
+
+#endButton, #button-decline
+{
+	background: #d43b24;
+	color: white;
+	border-color: #d43b24;
+}
+
+#endButton:hover, #button-decline:hover
+{
+	background: #ac2013;
+	color: white;
+	border-color: #ac2013;
+}
+
+#button-accept
+{
+	background: #448845;
+	color: white;
+	border-color: #448845;
+}
+
+#button-accept:hover
+{
+	background: #175e1a;
+	color: white;
+	border-color: #175e1a;
+}
+
+#muteButton
+{
+	height: 34px;
+}
+
+#muteButton span, #endButton span
+{
+	display: inline-block;
+}
+
+#muteButton span.video-icon
+{
+	background: url(../assets/video.png) no-repeat;
+	background-size: 24px 16px;
+	width: 24px;
+	height: 16px;
+}
+
+#muteButton span.video-icon.mute
+{
+	background: url(../assets/video-mute.png) no-repeat;
+	background-size: 24px 16px;
+	width: 24px;
+	height: 16px;
+}
+
+#muteButton span.mic-icon
+{
+	background: url(../assets/mic.png) no-repeat;
+	background-size: 16px 18px;
+	width: 16px;
+	height: 18px;
+}
+
+#muteButton span.mic-icon.mute
+{
+	background: url(../assets/mic-mute.png) no-repeat;
+	background-size: 16px 18px;
+	width: 16px;
+	height: 18px;
+}
+
+#endButton span.end-call-icon
+{
+	background: url(../assets/end-call.png) no-repeat;
+	background-size: 24px 10px;
+	width: 24px;
+	height: 10px;
+}
+
+.draw-style-sample {
+    margin:auto 0;
+    top:0;
+    bottom:0;
+    width: 100%;
+    position: absolute;
+}
+
+#currentdrawstylesample {
+    position: absolute;
+    left: 0;
+    margin: auto 0;
+    top: 70%;
+    bottom: 30%;
+    width: 9px;
+}
+
+#drawbutton {
+    overflow: hidden;
+}
+
+.draw-style-sample-container {
+    height: 25px;
+    width: 30px;
+    margin-right: 0.25em;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+a .draw-style-sample-container {
+    margin-right: 0.5em;
+}
+
+#drawstyleeditor {
+    display : none;
+}
+
+#editoroverlay {
+    z-index: 9999999999;
+    position: absolute;
+    max-width:80%;
+    max-height:80%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #3c6aa1;
+    border-radius: 4px;
+    width: 800px;
+    height: 400px;
+}
+
+#previewstroke {
+    width : 10em;
+    height : 5em;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 4em auto;
+    clear: both;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#previewstrokesample {
+    width: 80%;
+    margin: auto;
+    left:0;
+    right:0;
+}
+
+#currentpresets {
+    float: left;
+    width: 30%;
+    height: calc(100% - 2em);
+    margin: 1em;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+#currentpresets span {
+    float: right;
+    opacity: 0.4;
+}
+
+#currentpresets a span:hover {
+    opacity: 1.0;
+}
+
+#closedrawstyleeditor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0.5em;
+}
+
+#addpreset {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0.5em;
+}
+
+#preseteditor {
+    float: left;
+    margin: 1em;
+    width: calc(70% - 4em);
+    height: calc(100% - 2em);
+    position: relative;
+}
+
+#preseteditor label {
+    margin: 5px;
+}
+
+#titlecolumn {
+    width: 40%;
+}
+
+#inputcolumn {
+    width: 60%;
+}
+
+#preseteditor label {
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: 300;
+}
+
+#strokecolour {
+    border-radius: 4px;
+    background-color: white;
+}
+
+#drawstylelist li {
+    padding-right: 30px;
+    box-sizing: initial;
+}
+
+.hidden #agent-status {
+    display: none !important;
+}

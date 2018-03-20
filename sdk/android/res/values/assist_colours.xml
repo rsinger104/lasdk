@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="error_popup_background">#AA000000</color>
+    <color name="document_popup_background">#FFFFFF</color>
+    
+    <color name="video_buttons_area_background_top">#676E78</color>
+    <color name="video_buttons_area_background_bottom">#4c525b</color>
+    
+    <color name="video_button_background_top">#686868</color>
+    <color name="video_button_background_bottom">#1d1f1f</color>
+    <color name="video_button_stroke">#1d1f1f</color>
+</resources>
